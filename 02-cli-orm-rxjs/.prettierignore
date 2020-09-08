@@ -1,0 +1,7 @@
+
+.gitignore
+.prettierignore
+*.bak
+*.sh
+build
+database.*

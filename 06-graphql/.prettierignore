@@ -1,0 +1,9 @@
+.gitignore
+.env
+*.sql
+.prettierignore
+*.bak
+*.sh
+/build
+/dist
+*postman*

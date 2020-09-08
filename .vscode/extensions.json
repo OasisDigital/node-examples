@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "alexcvzz.vscode-sqlite",
+    "EditorConfig.editorconfig",
+    "esbenp.prettier-vscode",
+    "ms-vscode.vscode-typescript-tslint-plugin",
+    "stkb.rewrap"
+  ]
+}

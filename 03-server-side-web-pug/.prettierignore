@@ -1,0 +1,11 @@
+.DS_Store
+.gcloudignore
+.gitignore
+.prettierignore
+*.bak
+*.pug
+*.png
+*.sh
+*.svg
+build
+database.*

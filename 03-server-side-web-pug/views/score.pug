@@ -1,0 +1,15 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  title Score
+  link(rel='icon' type='image/x-icon' href='/playing-cards-152-170641.png')
+  link(rel='stylesheet' href='/style.css')
+body
+  h1 Your hand
+  ol
+    each card in hand
+      li #{card.display}
+
+  h1 Hand Category
+  p #{ handCategory }

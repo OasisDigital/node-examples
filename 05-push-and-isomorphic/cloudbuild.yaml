@@ -1,0 +1,27 @@
+steps:
+  # npm install
+  - name: node
+    entrypoint: npm
+    args: ['install']
+  # npm run build
+  - name: node
+    entrypoint: npm
+    args: ['run', 'build']
+  # npm test
+  - name: node
+    entrypoint: npm
+    args: ['test']
+  # npm run lint
+  - name: node
+    entrypoint: npm
+    args: ['run', 'lint']
+  # npm run format:check -- --all
+  - name: node
+    entrypoint: npm
+    args: ['run', 'format:check', '--', '--all']
+  # Build the container (with the compiled JS and runtime deps only)
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/$PROJECT_ID/chat', '.']
+
+# ask Cloud Build to push the image
+images: ['gcr.io/$PROJECT_ID/chat']

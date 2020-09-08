@@ -1,0 +1,42 @@
+{
+  "npmScope": "oasis-demos",
+  "affected": {
+    "defaultBase": "master"
+  },
+  "implicitDependencies": {
+    "workspace.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.base.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "accessToken": "YjJmYzg0YmUtMjA5OC00N2EyLTg5YWYtZWEzNmZkYWM4OTA0fHJlYWQtd3JpdGU=",
+        "cacheableOperations": ["build", "test", "lint", "e2e"],
+        "canTrackAnalytics": false,
+        "showUsageWarnings": true
+      }
+    }
+  },
+  "projects": {
+    "gossip-client": {
+      "tags": []
+    },
+    "gossip-client-e2e": {
+      "tags": [],
+      "implicitDependencies": ["gossip-client"]
+    },
+    "server": {
+      "tags": []
+    },
+    "filter": {
+      "tags": []
+    }
+  }
+}

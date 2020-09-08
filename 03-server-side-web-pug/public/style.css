@@ -1,0 +1,32 @@
+input.card {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  height: 126px;
+  width: 90px;
+  margin: 5px;
+  display: block;
+  float: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 5px solid #eee;
+}
+
+input.card[type='checkbox']:checked {
+  border: 5px solid green;
+}
+
+input.card[type='checkbox']:focus {
+  outline: 2px dotted blue;
+}
+
+button.score {
+  height: 50px;
+  width: 200px;
+  margin: 30px;
+  font-size: 20px;
+  background: white;
+}
+
+body {
+  background: #eee;
+}

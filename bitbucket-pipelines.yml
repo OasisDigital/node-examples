@@ -1,0 +1,54 @@
+image: node:12
+
+options:
+  size: 2x
+
+pipelines:
+  branches:
+    '**':
+      - parallel:
+          - step:
+              caches:
+                - npm-cache
+              script:
+                - (cd 01-express-typescript-rest-api; ./ci.sh)
+
+          - step:
+              caches:
+                - npm-cache
+              script:
+                - (cd 02-cli-orm-rxjs; ./ci.sh)
+
+          - step:
+              caches:
+                - npm-cache
+              script:
+                - (cd 03-server-side-web-pug; ./ci.sh)
+
+          - step:
+              caches:
+                - npm-cache
+              script:
+                - (cd 04-routing-rest-authz; ./ci.sh)
+
+          - step:
+              caches:
+                - npm-cache
+              script:
+                - (cd 05-push-and-isomorphic; ./ci.sh)
+
+          - step:
+              caches:
+                - npm-cache
+              script:
+                - (cd 06-graphql; ./ci.sh)
+
+          - step:
+              caches:
+                - npm-cache
+              script:
+                - (cd 07-npm-library; ./ci.sh)
+
+definitions:
+  caches:
+    npm-cache: /root/.npm

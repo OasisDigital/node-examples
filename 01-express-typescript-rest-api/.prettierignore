@@ -1,0 +1,6 @@
+.gcloudignore
+.gitignore
+.prettierignore
+*.bak
+*.sh
+build

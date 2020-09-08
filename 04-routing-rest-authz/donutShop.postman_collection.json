@@ -1,0 +1,336 @@
+{
+	"info": {
+		"_postman_id": "95341f43-7e93-4cd0-9d31-300f5fce0f26",
+		"name": "donutShop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create donut",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Chocolate\",\r\n    \"description\": \"Decadent\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/donuts",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"donuts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete donut",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/donuts/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"donuts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list donuts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/donuts",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"donuts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get donut",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/donuts/2",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"donuts",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update donut",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Chocolate\",\r\n    \"description\": \"Super Decadent\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/donuts/2",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"donuts",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Bob Jones\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/customers",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list customers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/customers",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update customer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Jack Jones\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/customers/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get customer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/customers/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete customer",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/customers/2",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customers",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerId\": 1,\r\n    \"orderItems\": [\r\n        {\r\n            \"donutId\": 3,\r\n            \"quantity\": 5\r\n        },\r\n        {\r\n            \"donutId\": 2,\r\n            \"quantity\": 1\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/orders",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/orders",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get order",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/orders/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"orders",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete order",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/orders/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"orders",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get orders for donut",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/orders/donut/3/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"orders",
+						"donut",
+						"3",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

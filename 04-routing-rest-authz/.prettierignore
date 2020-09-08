@@ -1,0 +1,9 @@
+
+.gitignore
+.prettierignore
+*.bak
+*.sh
+/build
+/dist
+*postman*
+donutshop.db
